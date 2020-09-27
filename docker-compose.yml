@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+
+  mysql-devChallenge:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: devChallenge
+    ports:
+      - "3308:3306"
