@@ -10,7 +10,7 @@ Imagine um cenário onde você precisa armazenar um determinado dado gerado dent
 
 2- Faça um fork deste repositório e implemente esta rotina usando Docker. 
 
-    Considerando que a QR usa MySql e PostGres como repositório de dados, criei um docker-compose que irá rodar e salvar ambos repositório baseados em imagens padrões criadas pelo Docker. Além disso coloquei o Adminer (serviço Php para visualizar a estrutura e os bancos de dados) para facilitar a vizualização. Caso esteja sendo utilizado o Driver Toolbox, é necessário saber qual o IP gerado pela máquina. 
+    Considerando que a QR usa MySql e PostGres como repositório de dados, criei um docker-compose que irá rodar e salvar ambos repositório baseados em imagens padrões criadas pelo Docker. Além disso coloquei o Adminer (serviço Php para visualizar a estrutura e os bancos de dados) para facilitar a visualização. Caso esteja sendo utilizado o Driver Toolbox, é necessário saber qual o IP gerado pela máquina. 
     Ao rodar `docker-compose up` os 3 serviços serão levantados e irá criar 2 pastas (caso não existam ainda) para persistir os dados do Container.
 
 Realize um pull request com a resposta da primeira pergunta na descrição juntamente com a implementação da solução.
