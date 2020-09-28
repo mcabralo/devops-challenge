@@ -1,11 +1,29 @@
 version: "3"
 
-services: 
+services:
 
-  mysql-devChallenge:
+
+  mysqlDevChallenge:
     image: mysql:8.0.2
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: devChallenge
+    volumes:
+      - "./data:/var/lib/mysql:rw" 
     ports:
       - "3308:3306"
+    command: "--innodb_use_native_aio=0"
+    
+  # docker-compose exec mysql-devChallenge mysql uroot proot devChallenge (Ver banco codeline)
+
+  postGDevChallenge:
+    image: postgres
+    environment: 
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: devChallenge
+
+  admin:
+    image: adminer
+    ports:
+      - 8080:8080
